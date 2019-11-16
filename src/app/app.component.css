@@ -1,0 +1,25 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+.mat-sidenav-content p {
+    margin-left: 100px;
+    position: fixed;
+    z-index: 1000;
+}
+.hh-sidenav-content {
+    width: 250px;
+}
+.mat-sidenav-content button {
+    margin-top: 10px;
+    background-color: #3ac7e3;
+    border: 0px;
+    font-size: 25px;
+    outline: none;
+}
+.hh-container-classes {
+    padding-top: 80px;
+}

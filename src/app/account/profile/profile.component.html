@@ -1,0 +1,94 @@
+<div class="container hh-container">
+    <div class="row">
+        <div class="col-4 hh-floatRight hh-avata-profile">
+            <img src="\assets\resources\img\avata.png" alt="avata">
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                        aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">Chọn ảnh đại diện</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 hh-floatRight">
+            <p><i class="fas fa-user-alt"></i>&nbsp;&nbsp;&nbsp; Họ và tên</p>
+        </div>
+        <div class="col-6">
+            <form class="example-form">
+                <mat-form-field class="example-full-width hh-input-width100">
+                    <input matInput placeholder="" value="">
+                </mat-form-field>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 hh-floatRight">
+            <p><i class="fas fa-mars-double"></i>&nbsp;&nbsp;&nbsp;Giới tính</p>
+        </div>
+        <div class="col-6">
+                <mat-form-field class="hh-input-width100">
+                        <mat-select disableRipple>
+                          <mat-option value="male">Nam</mat-option>
+                          <mat-option value="female">Nữ</mat-option>
+                          <mat-option value="others">Khác</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 hh-floatRight">
+            <p><i class="fas fa-birthday-cake"></i>&nbsp;&nbsp;&nbsp;Ngày sinh</p>
+        </div>
+        <div class="col-6">
+                <mat-form-field class="hh-input-width100">
+                        <input matInput [matDatepicker]="picker1" placeholder="" [formControl]="date">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                      </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 hh-floatRight">
+            <p><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp;&nbsp;Trường</p>
+        </div>
+        <div class="col-6">
+            <form class="example-form">
+                <mat-form-field class="example-full-width hh-input-width100">
+                    <input matInput placeholder="" value="">
+                </mat-form-field>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 hh-floatRight">
+            <p><i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;&nbsp;Số điện thoại</p>
+        </div>
+        <div class="col-6">
+            <form class="example-form">
+                <mat-form-field class="example-full-width hh-input-width100">
+                    <input matInput placeholder="" value="" type="number">
+                </mat-form-field>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 hh-floatRight">
+            <p><i class="fas fa-mail-bulk"></i>&nbsp;&nbsp;&nbsp;Email</p>
+        </div>
+        <div class="col-6">
+                <div class="example-container">
+                        <mat-form-field class="hh-input-width100">
+                          <input matInput placeholder="Enter your email" [formControl]="email" required>
+                          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                        </mat-form-field>
+                      </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 offset-7"><button class="btn btn-primary col-md-12 " type="button" (click)="login()">Cập nhật</button></div>
+    </div>
+</div>

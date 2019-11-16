@@ -1,0 +1,91 @@
+<div class="container">
+        <base href="account/signup">
+    <form action="#" method="post">
+        <div class="row">
+            <div class="col-xs-8 offset-xs-2 col-md-2 offset-md-2 ">
+                <img src="assets/resources/img/logo.png" alt="logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-1 col-xs-8 offset-xs-2">
+                <div class="hh-op-bg-co1">
+                    <p>Thông tin cá nhân</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 offset-md-2 col-xs-2 offset-2">
+                <div class="row">
+                    <p>Ảnh đại diện</p>
+                </div>
+                <div class="row">
+                    <div class="hh-avata-cir">
+                        <img src="assets/resources/img/avata.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 hh-md-pick">
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">Chọn ảnh đại diện</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row hh-row-input">
+            <div class="col-4 offset-2 hh-wFull">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Họ và tên</mat-label>
+                        <input matInput placeholder="">
+                    </mat-form-field>
+            </div>
+
+
+        </div>
+        <div class="row hh-row-input">
+            <div class="col-4 offset-2 hh-wFull">
+                    <mat-form-field [color]="primary" appearance="outline">
+                        <mat-label>Tài khoản</mat-label>
+                        <input matInput placeholder="">
+                    </mat-form-field>
+            </div>
+            <div class="col-4 offset-1 hh-wFull">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="">
+                    </mat-form-field>
+            </div>
+        </div>
+        <div class="row hh-row-input">
+            <div class="col-4 offset-2 hh-wFull">
+                    <mat-form-field appearance="outline">
+                        <mat-label> Mật khẩu</mat-label>
+                        <input matInput placeholder="" type="password">
+                    </mat-form-field>
+            </div>
+            <div class="col-4 offset-1 hh-wFull">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Xác nhận mật khẩu</mat-label>
+                        <input matInput placeholder="" type="password">
+                    </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9 offset-2">
+                <h5 class="hh-text-family-comic">Vai trò :</h5>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                        <mat-button-toggle value="giaoVien">Giáo Viên</mat-button-toggle>
+                        <mat-button-toggle value="hocSinh">Học Sinh</mat-button-toggle>
+                      </mat-button-toggle-group>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9 offset-2">
+                <button type="submit" class=" hh-finish">Hoàn Tất</button>
+            </div>
+        </div>
+
+    </form>
+</div>

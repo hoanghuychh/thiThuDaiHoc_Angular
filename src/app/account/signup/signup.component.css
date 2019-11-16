@@ -1,0 +1,20 @@
+.mat-button-toggle-group.mat-button-toggle-group.mat-button-toggle-group-appearance-standard {
+    width: 100%;
+}
+
+.mat-button-toggle#mat-button-toggle-2 {
+    width: 50%;
+}
+
+.mat-button-toggle#mat-button-toggle-1 {
+    width: 50%;
+}
+
+.hh-wFull {
+    display: flex;
+    flex-direction: column;
+}
+
+.hh-wFull > * {
+    width: 100%;
+}

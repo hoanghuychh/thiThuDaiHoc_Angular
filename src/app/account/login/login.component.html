@@ -1,0 +1,46 @@
+   <div class="container ">
+        <div class="row">
+            <div class="  col-sm-2 col-md-4">
+
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-4">
+                <div class="  col-sm-10 offset-sm-1 col-md-8 offset-md-2"> 
+                <img src="assets/resources/img/logo.png" alt="logo" class="hh-logo">
+                </div>
+                <form action="#" method="post">
+                    <span>
+                        <p>Tên đăng nhập</p>
+                        <input [(ngModel)]="account" aria-invalid="false" class="input-group-text col-12  autofill "
+                        name="account" >
+                    </span>
+                    <span>
+                        <p>Mật khẩu</p>
+                        <input type="password" class="input-group-text col-12" id="inputGroup-sizing-sm">
+                    </span>
+                    <div class="offset-7">
+                        <a href="#"> Quên mật khẩu</a>
+                    </div><br>
+                    <div class="login">
+                        <button class="btn btn-primary col-md-12 " type="button" (click)="login()">Đăng nhập</button>
+                    </div>
+                    <br><br><br>
+                    <div class="offset-1">
+                        <h6 style="font-family: 'Coming Soon', cursive;">Hoặc đăng nhập bằng</h6>
+                    </div>
+                    <div class="faFb">
+                        <button class="btn btn-primary col-sm-12 col-md-5 float-left" type="submit"><i
+                                class="fab fa-facebook-f"></i> Facebook</button>
+                    </div>
+                    <div class="fbGg">
+                        <button class="btn btn-primary col-sm-12 col-md-5 offset-md-2 float-left" type="submit"><i
+                                class="fab fa-google"></i> Google</button>
+                    </div>
+                </form>
+                <br><br><br>
+                <span>Thành viên mới ? Đăng kí <a routerLink="/account/signup" >Tại đây</a></span>
+            </div>
+            <div class="  col-sm-2 col-md-4">
+
+            </div>
+        </div>
+    </div>

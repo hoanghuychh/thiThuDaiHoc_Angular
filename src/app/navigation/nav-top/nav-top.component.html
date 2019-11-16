@@ -1,0 +1,19 @@
+<div *ngIf="auth.isLogin" class="thanhNgang">
+    <div class="row"> 
+        <div class="col-1">
+            <img src="assets/resources/img/logo.png" class="hh-logo1" alt="logo">
+        </div>
+        <div class="col-2 offset-5">
+            <div class="hh-option-left">
+                <label class="hh-displayName" id="">DisplayName</label>
+                <!-- avata menu option-->
+                <img src="assets/resources/img/avata.png" mat-button [matMenuTriggerFor]="menu" class="hh-avata"
+                    alt="avata">
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item><i class="fas fa-user-circle"></i> Thông tin cá nhân</button>
+                    <button mat-menu-item (click)="logout()"><i class="fas fa-sign-out-alt"></i> Đăng xuất</button>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+</div>
