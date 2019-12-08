@@ -1,16 +1,30 @@
-<div class="container create">
-    <div class="row">
-        <div class="col-4 offset-6">
-            <img src="assets/resources/img/Annotation 2019-10-01 165103.png" alt="">
-        </div>
+<div  class="container create" >
+  <div class="row">
+    <div class="col-4 offset-6">
+      <img src="assets/resources/img/Annotation 2019-10-01 165103.png" alt="" />
     </div>
-    <form action="post">
-        <div class="col-5 offset-5">
-            <div class="row"><label for="">Tên lớp học</label></div>
-            <input type="text" name="" class="hh-input-cir" id="">
-            <div class="row"><label for="">Mã lớp học</label></div>
-            <input type="text" name="" class="hh-input-cir" id="">
-        <button class="btn btn-primary col-md-12 " type="submit">Hoàn tất</button>
-        </div>
-    </form>
+  </div>
+  <form action="post">
+    <div class="col-5 offset-5">
+      <div class="row"><label for="">Tên lớp học</label></div>
+      <input type="text" name="" class="hh-input-cir" id="" />
+
+      <div class="row"><label for="">Mã lớp học</label></div>
+      <input type="text" name="" class="hh-input-cir" id="" /><mat-slide-toggle>
+        Mật khẩu :
+      </mat-slide-toggle>
+      <mat-form-field class="example-full-width">
+        <input id="passClass"
+          matInput
+          aria-label="State"
+          [formControl]="stateCtrl"
+        />
+      </mat-form-field>
+
+      <br />
+
+      <button class="btn btn-primary col-md-12 " type="submit">Hoàn tất</button>
+    </div>
+  </form>
 </div>
+

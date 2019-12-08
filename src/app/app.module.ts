@@ -12,9 +12,15 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatSelectModule} from '@angular/material/select';
+import { DashboardComponent } from './dashboard/dashboard.component'; 
+import { ClassModule } from './class/class.module';
+import { ExerciseModule} from './exercise/exercise.module';
+import {HttpClientModule} from '@angular/common/http'
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +34,12 @@ import {MatSelectModule} from '@angular/material/select';
     MatFormFieldModule,
     FormsModule,
     MatDatepickerModule,
-    MatSelectModule
+    MatSelectModule,
+    ClassModule,
+    ExerciseModule,
+    HttpClientModule
   ],
+  exports:[],
   providers: [],
   bootstrap: [AppComponent]
 })

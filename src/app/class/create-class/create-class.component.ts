@@ -10,6 +10,11 @@ export class CreateClassComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+  };
+  // $(document).ready(function(){
 
+  // })
+  // $("#passClass").function() {
+    
+  // }
 }

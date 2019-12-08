@@ -66,7 +66,7 @@ label.membersClass {
 .hh-classes {
     background-color: #0fa4a4;
     width: 100%;
-    height: 73px;
+    height: 98px;
     padding: 6px;
     border-radius: 10px;
 }
@@ -75,9 +75,7 @@ label.membersClass {
     background-color: #3AC7E3;
     border-radius: 0px 10px 10px 0px;
 }
-
-.giaoVien {}
-
+ 
 .giaoVien.hh-pick-left {
     background-color: #3AC7E3;
     border-radius: 10px 0px 0px 10px;
@@ -97,15 +95,14 @@ img.hh-img-logo {
 }
 
 .container.create {
+    width: 1000px;
+    align-content: center;
+    margin: 0 auto;
     position: 150px;
     top: 150px;
-}
-
-.container.create {
     position: fixed;
-    top: 150px;
+    /* display: flex; */
 }
-
 label {
     font-size: 25px;
     font-family: Comic Sans MS;
@@ -244,8 +241,6 @@ button.hh-finish {
     cursor: pointer;
     font-family: Sylfaen;
 }
-
-.giaoVien {}
 
 .hh-pick {
     background-color: #3AC7E3;

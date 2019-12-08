@@ -10,18 +10,18 @@
                 <form action="#" method="post">
                     <span>
                         <p>Tên đăng nhập</p>
-                        <input [(ngModel)]="account" aria-invalid="false" class="input-group-text col-12  autofill "
-                        name="account" >
+                        <input  aria-invalid="false" #usernameInput class="input-group-text col-12  autofill hh-input-bottom"
+                        name="username"  >
                     </span>
                     <span>
                         <p>Mật khẩu</p>
-                        <input type="password" class="input-group-text col-12" id="inputGroup-sizing-sm">
+                        <input type="password" #passwordInput class="input-group-text col-12 hh-input-bottom" id="inputGroup-sizing-sm" name="password">
                     </span>
                     <div class="offset-7">
                         <a href="#"> Quên mật khẩu</a>
                     </div><br>
                     <div class="login">
-                        <button class="btn btn-primary col-md-12 " type="button" (click)="login()">Đăng nhập</button>
+                        <button class="btn btn-primary col-md-12 " type="button" (click)="onLoginButtonClicked(usernameInput.value,passwordInput.value)">Đăng nhập</button>
                     </div>
                     <br><br><br>
                     <div class="offset-1">

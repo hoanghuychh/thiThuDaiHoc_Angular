@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Tham gia lớp học</h1>
+<div mat-dialog-content>
+  <p>Tham lớp học với ID thầy cô đã cung cấp. Thông tin lớp học sẽ được hiển thị chi tiết với mã hợp lệ.</p>
+  <mat-form-field>
+    Mã lớp : <input matInput [(ngModel)]="data.maLopHoc">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Hủy</button>
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Tham gia lớp</button>
+</div>

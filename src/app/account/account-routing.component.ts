@@ -7,15 +7,15 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
     {
-        path:"account/login",
+        path:"login",
         component:LoginComponent
     },
     {
-        path:"account/signup",
+        path:"signup",
         component:SignupComponent
     },
     {
-        path:"account/profile",
+        path:"profile",
         component:ProfileComponent
     }
 ];
